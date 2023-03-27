@@ -26,7 +26,7 @@
             
         ***********************************-->
         <div class="nav-header">
-            <a href="./index.html" class="brand-logo">
+            <a href="#" class="brand-logo">
 				<svg class="logo-abbr" width="39" height="23" viewBox="0 0 39 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path class="w3" d="M32.0362 22H19.0466L20.7071 18.7372C20.9559 18.2484 21.455 17.9378 22.0034 17.9305L31.1036 17.8093C33.0753 17.6497 33.6571 15.9246 33.7015 15.0821C33.7015 13.2196 32.1916 12.5765 31.4367 12.4878H23.7095L25.9744 8.49673H30.4375C31.8763 8.3903 32.236 7.03332 32.236 6.36814C32.3426 4.93133 30.9482 4.61648 30.2376 4.63865H28.6955C28.2646 4.63865 27.9788 4.19212 28.1592 3.8008L29.7047 0.44798C31.0903 0.394765 32.8577 0.780573 33.5683 0.980129C38.6309 3.42801 37.0988 7.98676 35.6999 9.96014C38.1513 11.9291 38.4976 14.3282 38.3644 15.2816C38.098 20.1774 34.0346 21.8005 32.0362 22Z" fill="var(--primary)"></path>
 					<path class="react-w" d="M9.89261 21.4094L0 2.80536H4.86354C5.41354 2.80536 5.91795 3.11106 6.17246 3.59864L12.4032 15.5355C12.6333 15.9762 12.6261 16.5031 12.3842 16.9374L9.89261 21.4094Z" fill="white"></path>
@@ -144,7 +144,7 @@
 											<li>
 												<div class="timeline-panel">
 													<div class="media me-2">
-														<img alt="image" width="50" src="./images/1.jpg">
+														<img alt="image" src="${images_folder}/1.jpg"  width="25" height="30">
 													</div>
 													<div class="media-body">
 														<h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -177,7 +177,7 @@
 											 <li>
 												<div class="timeline-panel">
 													<div class="media me-2">
-														<img alt="image" width="50" src="./images/1.jpg">
+														<img alt="image" src="${images_folder}/1.jpg"  width="25" height="30" >
 													</div>
 													<div class="media-body">
 														<h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -210,7 +210,7 @@
 											<li>
 												<div class="timeline-panel">
 													<div class="media me-2">
-														<img alt="image" width="50" src="./images/1.jpg">
+														<img alt="image" src="${images_folder}/1.jpg"  width="25" height="30" >
 													</div>
 													<div class="media-body">
 														<h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -243,7 +243,7 @@
 											 <li>
 												<div class="timeline-panel">
 													<div class="media me-2">
-														<img alt="image" width="50" src="./images/1.jpg">
+														<img alt="image" src="${images_folder}/1.jpg"  width="25" height="30" >
 													</div>
 													<div class="media-body">
 														<h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -287,13 +287,14 @@
 
                                 </a>
 							</li>	
-							<li class="nav-item align-items-center header-border"><a href="./page-login.html" class="btn btn-primary btn-sm">Logout</a></li>	
+							<li class="nav-item align-items-center header-border"><a href="#" class="btn btn-primary btn-sm">Logout</a></li>	
 							<li class="nav-item ps-3">
 								<div class="dropdown header-profile2">
 									<a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										<div class="header-info2 d-flex align-items-center">
 											<div class="header-media">
-												<img src="./images/1(1).jpg" alt="">
+											
+												<img  src="${images_folder}/1(1).jpg"  width="25" height="30" alt="">
 											</div>
 											<div class="header-info">
 												<h6>Thomas Fleming</h6>
@@ -306,7 +307,7 @@
 										<div class="card border-0 mb-0">
 											<div class="card-header py-2">
 												<div class="products">
-													<img src="./images/1(1).jpg" class="avatar avatar-md" alt="">
+													<img  src="${images_folder}/1(1).jpg" class="avatar avatar-md" width="50" height="60" alt="">
 													<div>
 														<h6>Thomas Fleming</h6>
 														<span>Web Designer</span>	
@@ -314,7 +315,7 @@
 												</div>
 											</div>
 											<div class="card-body px-0 py-2">
-												<a href="./app-profile.html" class="dropdown-item ai-icon ">
+												<a href="#" class="dropdown-item ai-icon ">
 													<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9848 15.3462C8.11714 15.3462 4.81429 15.931 4.81429 18.2729C4.81429 20.6148 8.09619 21.2205 11.9848 21.2205C15.8524 21.2205 19.1543 20.6348 19.1543 18.2938C19.1543 15.9529 15.8733 15.3462 11.9848 15.3462Z" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 													<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9848 12.0059C14.5229 12.0059 16.58 9.94779 16.58 7.40969C16.58 4.8716 14.5229 2.81445 11.9848 2.81445C9.44667 2.81445 7.38857 4.8716 7.38857 7.40969C7.38 9.93922 9.42381 11.9973 11.9524 12.0059H11.9848Z" stroke="var(--primary)" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -322,7 +323,7 @@
 
 													<span class="ms-2">Profile </span>
 												</a>
-												<a href="./app-profile.html" class="dropdown-item ai-icon ">
+												<a href="#" class="dropdown-item ai-icon ">
 													<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
 
 													<span class="ms-2">My Project</span><span class="badge badge-sm badge-secondary light rounded-circle text-white ms-2">4</span>
@@ -335,7 +336,7 @@
 
 													<span class="ms-2">Message </span>
 												</a>
-												<a href="./email-inbox.html" class="dropdown-item ai-icon ">
+												<a href="#" class="dropdown-item ai-icon ">
 													<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path fill-rule="evenodd" clip-rule="evenodd" d="M12 17.8476C17.6392 17.8476 20.2481 17.1242 20.5 14.2205C20.5 11.3188 18.6812 11.5054 18.6812 7.94511C18.6812 5.16414 16.0452 2 12 2C7.95477 2 5.31885 5.16414 5.31885 7.94511C5.31885 11.5054 3.5 11.3188 3.5 14.2205C3.75295 17.1352 6.36177 17.8476 12 17.8476Z" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 														<path d="M14.3888 20.8572C13.0247 22.372 10.8967 22.3899 9.51947 20.8572" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -353,7 +354,7 @@
 
 													<span class="ms-2">Settings </span>
 												</a>
-												<a href="./page-login.html" class="dropdown-item ai-icon">
+												<a href="#" class="dropdown-item ai-icon">
 													<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
 													<span class="ms-2">Logout </span>
 												</a>
