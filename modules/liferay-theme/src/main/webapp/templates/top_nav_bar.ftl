@@ -8,7 +8,7 @@
 		</a>
 		
 		<#if show_site_name>
-			<span class="brand-title" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+			<span class="brand-title site-name" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
 				${site_name}
 			</span>
 		</#if>

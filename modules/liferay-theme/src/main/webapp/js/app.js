@@ -1,3 +1,7 @@
 $("#header-info").click(function(){
-	$(".dropdown-menu-personal-menu").toggle();			
+	if($(".dropdown-menu-personal-menu").hasClass("show")){
+		$(".dropdown-menu-personal-menu").removeClass("show");
+	}else{
+		$(".dropdown-menu-personal-menu").addClass("show");	
+	}
 });

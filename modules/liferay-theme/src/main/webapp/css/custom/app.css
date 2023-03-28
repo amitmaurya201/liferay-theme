@@ -19,3 +19,7 @@
 .portlet-title-text .portlet-title-editable{
 	display: none;
 }
+
+.dropdown-menu-personal-menu{
+	left: 78rem !important;	
+}
