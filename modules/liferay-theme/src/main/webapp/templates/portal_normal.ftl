@@ -27,7 +27,7 @@
 		<@liferay.css file_name="${css_folder}/custom/app.css" />
 		
 		
-		<@liferay.js file_name = "${javascript_folder}/app.js" /> 
+		
 		<@liferay.js file_name = "${javascript_folder}/bootstrap-clockpicker.min.js" />
 	    <@liferay.js file_name = "${javascript_folder}/bootstrap-datetimepicker.min.js" />
 	    <@liferay.js file_name = "${javascript_folder}/bootstrap-select.min.js" />
