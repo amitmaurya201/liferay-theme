@@ -19,15 +19,15 @@
 		<@liferay.css file_name="${css_folder}/custom/nouislider.min.css" />
 		<@liferay.css file_name="${css_folder}/custom/smart_wizard.min.css" />
 		<@liferay.css file_name="${css_folder}/custom/swiper-bundle.min.css" />	
-	
 		<@liferay.css file_name="${css_folder}/custom/css2.css" />
 		<@liferay.css file_name="${css_folder}/custom/dropzone.css" />
 		<@liferay.css file_name="${css_folder}/custom/jquery-jvectormap.css" />
 		<@liferay.css file_name="${css_folder}/custom/style.css" />
 		<@liferay.css file_name="${css_folder}/custom/tagify.css" />
+		<@liferay.css file_name="${css_folder}/custom/app.css" />
 		
 		
-		
+		<@liferay.js file_name = "${javascript_folder}/app.js" /> 
 		<@liferay.js file_name = "${javascript_folder}/bootstrap-clockpicker.min.js" />
 	    <@liferay.js file_name = "${javascript_folder}/bootstrap-datetimepicker.min.js" />
 	    <@liferay.js file_name = "${javascript_folder}/bootstrap-select.min.js" />

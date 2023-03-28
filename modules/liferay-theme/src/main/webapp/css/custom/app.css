@@ -1,0 +1,12 @@
+.nav-item .dropdown{
+	margin-right: -0.6rem !important;
+}
+
+.nav-item .dropdown-toggle.rounded-circle.btn.btn-unstyled::after {
+	display:none !important;	
+}
+
+.nav-item .sticker {
+	width: 1.875rem !important;
+    height: 1.875rem !important;
+}
