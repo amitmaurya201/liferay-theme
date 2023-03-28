@@ -75,17 +75,15 @@
             			setting header start
 			***********************************-->	
                 	
-          
+          	
                 	
                 <ul class="navbar-nav header-right right_nav" >
-					<li class="nav-item dropdown notification_dropdown align-items-center text-white">
-						<div >
+					
 						<@liferay_portlet["runtime"]
 							    instanceId="headerSetting"
 							    portletName="com_liferay_header_setting_HeaderSettingPortlet"
 							/>
-						</div>
-					</li>	
+						
 					
 					<li class="nav-item dropdown notification_dropdown">	
                     <a class="nav-link " href="javascript:void(0);" data-bs-toggle="dropdown">

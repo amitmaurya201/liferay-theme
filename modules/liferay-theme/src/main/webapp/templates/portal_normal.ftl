@@ -69,16 +69,6 @@
 	    <@liferay.js file_name = "${javascript_folder}/jquery.styleSwitcherjs" />
 	    <@liferay.js file_name = "${javascript_folder}/jquery.tagify.js" />
 	    
-	    	
-
-	<style>
-		 .portlet-title-text {
-			display: none;
-		}
-		.portlet-title-text .portlet-title-editable{
-			display: none;
-		}
-	</style>	
 </head>
 
 <body class="${css_class}">
