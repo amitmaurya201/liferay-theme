@@ -16,10 +16,13 @@
 .portlet-title-text {
 	display: none;
 }
-.portlet-title-text .portlet-title-editable{
+/* .portlet-title-text .portlet-title-editable{
 	display: none;
 }
-
+ */
+.navbar-nav .portlet-topper {
+ 	margin-top: 5rem !important;
+ }
 .dropdown-menu-personal-menu{
-	left: 78rem !important;	
+	left: 77rem !important;	
 }
