@@ -12,7 +12,7 @@
 </style>
 <div class="header_setting">
 	<c:choose>
-		<c:when test="<%=icon1 == ""%>">
+		<c:when test="<%=icon1 == null || icon1 == ""%>">
 			<h6 class="text-white header_setting_icon">choose your header
 				setting</h6>
 		</c:when>
