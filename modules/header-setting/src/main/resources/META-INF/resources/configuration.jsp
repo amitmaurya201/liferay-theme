@@ -1,36 +1,4 @@
 <%@ include file="init.jsp"%>
-<%
-	long documentFolderId = 0;
-	long groupId = themeDisplay.getScopeGroupId();
-	List<Folder> mainFolders = DLAppServiceUtil.getFolders(groupId, DLFolderConstants.DEFAULT_PARENT_FOLDER_ID);
-	for (Folder folder : mainFolders) {
-		if (folder.getName().equals("Theme-HeaderSetting")) {
-			documentFolderId = folder.getFolderId();
-		}
-	}
-
-	String[] uploadedIconName1 = null;
-	String[] uploadedIconName2 = null;
-	String[] uploadedIconName3 = null;
-	String[] uploadedIconName4 = null;
-	String[] uploadedIconName5 = null;
-	if (icon1 != "") {
-		uploadedIconName1 = icon1.split("/");
-	}
-	if (icon2 != "") {
-		uploadedIconName2 = icon2.split("/");
-	}
-	if (icon3 != "") {
-		uploadedIconName3 = icon3.split("/");
-	}
-	if (icon4 != "") {
-		uploadedIconName4 = icon4.split("/");
-	}
-	if (icon5 != "") {
-		uploadedIconName5 = icon5.split("/");
-	}
-%>
-
 <style>
 .clear_uploaded_icon {
 	position: absolute;
@@ -44,6 +12,58 @@
 	display: none;
 }
 </style>
+<%
+	long documentFolderId = 0;
+	long groupId = themeDisplay.getScopeGroupId();
+	List<Folder> mainFolders = DLAppServiceUtil.getFolders(groupId, DLFolderConstants.DEFAULT_PARENT_FOLDER_ID);
+	try {
+		for (Folder folder : mainFolders) {
+			if (folder.getName().equals("Theme-HeaderSetting")) {
+				documentFolderId = folder.getFolderId();
+			}
+		}
+	} catch (Exception e) {
+	}
+
+	/* if folder is exist */
+	if (documentFolderId == 0) {
+%>
+<div class="container mt-3">
+	<div class="card">
+		<div class="card-body text-center">
+			<h4>
+				Please create a folder "<span class="text-danger">Theme-HeaderSetting</span>"
+				in Document and Media.
+			</h4>
+		</div>
+	</div>
+</div>
+<%
+	} else {
+
+		String[] uploadedIconName1 = null;
+		String[] uploadedIconName2 = null;
+		String[] uploadedIconName3 = null;
+		String[] uploadedIconName4 = null;
+		String[] uploadedIconName5 = null;
+		if (icon1 != null && icon1 != "") {
+			 uploadedIconName1 = icon1.split("/"); 
+		}
+		if (icon2 != null && icon2 != "") {
+			uploadedIconName2 = icon2.split("/");
+		}
+		if (icon3 != null && icon3 != "") {
+			uploadedIconName3 = icon3.split("/");
+		}
+		if (icon4 != null && icon4 != "") {
+			uploadedIconName4 = icon4.split("/");
+		}
+		if (icon5 != null && icon5 != "") {
+			uploadedIconName5 = icon5.split("/");
+		}
+%>
+
+
 <liferay-portlet:actionURL portletConfiguration="<%=true%>"
 	var="configurationActionURL" />
 
@@ -191,6 +211,9 @@
 		<aui:button id="save" type="submit" value="Save" />
 	</div>
 </aui:form>
+<%
+	}
+%>
 
 <aui:script>
 $('#<portlet:namespace />title1' , '#<portlet:namespace />icon1','#<portlet:namespace />dataProviderURL1').attr("required","true");
@@ -255,7 +278,7 @@ function uploadImg(i){
 	}).fail(function(e) {
 		console.log("error --- "+e);
 		$('#taken_file_name').remove();
-      	$('#error'+i).append('<p class="text-success" id="taken_file_name" >This file name is already taken</p>');
+      	$('#error'+i).append('<p class="text-success" id="taken_file_name">This file name is already taken</p>');
 	}); 
 }
 
