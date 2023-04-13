@@ -216,7 +216,8 @@
 %>
 
 <aui:script>
-$('#<portlet:namespace />title1' , '#<portlet:namespace />icon1','#<portlet:namespace />dataProviderURL1').attr("required","true");
+var requiredFields = ['#<portlet:namespace />title1' , '#<portlet:namespace />icon1','#<portlet:namespace />dataProviderURL1' ];
+	$(requiredFields.join()).attr("required","true");
 	<!-- for have the value fileIdIcon  -->
 for(var i=1; i<6; i++ ){
 	var uploaded_file =$("#<portlet:namespace />fileIdIcon"+i).val();
@@ -251,6 +252,7 @@ function removeHeaderSetting(id) {
 	document.getElementById('setting'+id).style.display = "none";
 	$('.add'+id).css("display", "block");
 	$('#<portlet:namespace />title'+id).val("");
+	$('#<portlet:namespace/>icon'+id).val("");
 	$('#<portlet:namespace />fileIdIcon'+id).val("");
 	$('#<portlet:namespace />dataProviderURL'+id).val("");
 	var setting = ['#<portlet:namespace />title'+id , '#<portlet:namespace />icon'+id,'#<portlet:namespace />dataProviderURL'+id ];
