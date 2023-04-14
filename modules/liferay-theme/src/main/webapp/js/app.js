@@ -5,3 +5,4 @@ $("#header-info").click(function(){
 		$(".dropdown-menu-personal-menu").addClass("show");	
 	}
 });
+
