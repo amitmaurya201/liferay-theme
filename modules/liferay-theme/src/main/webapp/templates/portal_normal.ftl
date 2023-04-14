@@ -82,11 +82,11 @@
 <div  data-typography="poppins" data-theme-version="light" data-layout="vertical" data-nav-headerbg="color_4" data-headerbg="color_4" data-sidebar-style="full" data-sidebarbg="color_1" data-sidebar-position="fixed" data-header-position="fixed" data-container="wide" direction="ltr" data-primary="color_1" data-secondary="color_1">
 	<div id="main-wrapper" class="show">
 		<#include "${full_templates_path}/top_nav_bar.ftl">
+	
 		<#include "${full_templates_path}/navigation_menu.ftl">
-				
+		
 		<div class="content-body" style="min-height: 800px;">
 		<#--	<#include "${full_templates_path}/breadcrumb.ftl"> -->
-
 			<#if selectable>
 				<@liferay_util["include"] page=content_include />
 			<#else>
@@ -98,7 +98,6 @@
 				</@>
 			</#if>
 		</div>
-
 
 		<footer>
 			<#if has_navigation && is_setup_complete>
